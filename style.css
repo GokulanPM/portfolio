@@ -34,6 +34,10 @@ body {
   }
   
   /* Unique background colors for each section */
+  .educ {
+    background-color: #1696d2;
+  }
+
   .about {
     background-color: #e6f7ff;
   }
@@ -43,11 +47,11 @@ body {
   }
   
   .skills {
-    background-color: #f8e1e1;
+    background-color: #e8f898;
   }
   
   .contact {
-    background-color: #f1f8e9;
+    background-color: #f6f4f6;
   }
   
   .project {
