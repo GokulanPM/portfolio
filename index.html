@@ -1,90 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokulan P M - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+            color: #ffcc00;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .education {
+            background: rgba(0, 128, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #0080ff;
+            font-style: italic;
+            font-size: 1.2em;
+            border: 2px solid #0080ff;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 204, 0, 0.2);
+            border-radius: 10px;
+            border: 2px solid #ffcc00;
+        }
+        .skill {
+            background: #ffcc00;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            color: black;
+            font-weight: bold;
+        }
+        .projects {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project p {
+            color: #00ccff;
+            font-size: 1em;
+        }
+        .contacts {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .linkedin, .github {
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .linkedin {
+            background: #0077b5;
+            color: white;
+        }
+        .github {
+            background: #333;
+            color: white;
+        }
+        .linkedin:hover, .github:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        .about {
+            background: rgba(255, 69, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #ff4500;
+            font-style: italic;
+            font-size: 1.2em;
+            border: 2px solid #ff4500;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Header Section -->
-  <header id="header">
-    <nav>
-      <ul>
-        <li><a href="#edu">Education</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-<section id="educ" class="section">
-    <h1><b>GOKULAN P M - Electronics and software Engineer</h1></b>
-    <h1>Tech Enthusiast</h1>
-</section>
-
-<!-- About Me Section -->
-<section id="edu" class="section about">
-  <h2>Education</h2>
-  <p>Sri Krishna college of Engineering and Technology </p>
-  <p>B.E - Electronics and Communication Engineer</p>
-  <p>Year : [2023-2027]</p>  </section>
-
-  <section id="about" class="section">
-    
-    <h2>About Me</h2>
-    <p>I am Gokulan P M, currently pursuing a degree in Electronics and Communication Engineering at SKCET. With a strong passion for both software and hardware, I strive to integrate these fields in innovative ways. My expertise lies in effective communication and teamwork, ensuring I contribute positively to any collaborative environment. Driven by curiosity and a positive mindset, I am dedicated to continuous learning and overcoming challenges, aiming to grow both personally and professionally.</p>
-
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML & CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>C++</li>
-      <li>Java</li>
-      <li>GIT HUB & GIT</li>
-      <li>PC Hardware</li>
-      <li>Ubuntu</li>
-      <li>Networking</li>
-      <li>Tinkercad</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>I am currently developing a comprehensive financial calculator website designed to assist users in making informed financial decisions. The website features a suite of tools, including calculators for Systematic Investment Plan (SIP), Systematic Withdrawal Plan (SWP), inflation adjustments, Compound Annual Growth Rate (CAGR), and Extended Internal Rate of Return (XIRR). This project aims to provide an intuitive and user-friendly platform for individuals and financial professionals to analyze and manage their investments effectively.</p>
-      <a href="https://gokulanpm.github.io/website1/">Website Link</a>
+    <div class="container">
+        <h1>Gokulan P M</h1>
+        <p>Electronics & Communication Engineer | Developer</p>
+        <h2>Education</h2>
+        <div class="education">
+            <p><strong>Sri Krishna College of Engineering and Technology</strong></p>
+            <p>B.E - Electronics and Communication Engineer</p>
+            <p>Year: 2023-2027</p>
+        </div>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+        </div>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>project 1</h3>
+                <p>i am currently developing a comprehensive financial calculator website designed to assist users in making informed financial decisions. the website features a suite of tools, including calculators for systematic investment plan (sip), systematic withdrawal plan (swp), inflation adjustments, compound annual growth rate (cagr), and extended internal rate of return (xirr). this project aims to provide an intuitive and user-friendly platform for individuals and financial professionals to analyze and manage their investments effectively.</p>
+                <p><a href="https://gokulanpm.github.io/website1/" target="_blank" style="color: #ffcc00;">website link</a></p>
+            </div>
+            <div class="project">
+                <h3>project 2</h3>
+                <p>i have developed a mobile robot from the ground up, involving the intricate process of placing components on a printed circuit board (pcb) and integrating hardware elements to achieve functionality. this hands-on experience provided a comprehensive understanding of the hardware development lifecycle for robotic systems.</p>
+            </div>
+        </div>
+        <h2>Contact</h2>
+        <div class="contacts">
+            <a class="linkedin" href="https://www.linkedin.com/in/gokulanpm" target="_blank">LinkedIn</a>
+            <a class="github" href="https://github.com/GokulanPM/" target="_blank">GitHub</a>
+        </div>
+        <h2>about me</h2>
+        <div class="about">
+            <p>i am gokulan p m, currently pursuing a degree in electronics and communication engineering at skcet. with a strong passion for both software and hardware, i strive to integrate these fields in innovative ways. my expertise lies in effective communication and teamwork, ensuring i contribute positively to any collaborative environment. driven by curiosity and a positive mindset, i am dedicated to continuous learning and overcoming challenges, aiming to grow both personally and professionally.</p>
+        </div>
     </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>I have developed a mobile robot from the ground up, involving the intricate process of placing components on a printed circuit board (PCB) and integrating hardware elements to achieve functionality. This hands-on experience provided a comprehensive understanding of the hardware development lifecycle for robotic systems.</p>
-    </div>
-  </section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Email: gokulanpm93@gmail.com</p>
-    <a href="https://www.linkedin.com/in/gokulanpm">Linkedin Profile</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Thank You...</p>
-  </footer>
-
-  <!-- Link to JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
